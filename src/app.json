@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/main",
+    "pages/category/main",
+    "pages/my/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3399ff",
+    "navigationBarTitleText": "智慧加油站",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#3399ff",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/main",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/category/main",
+        "iconPath": "static/tabs/category.png",
+        "selectedIconPath": "static/tabs/category-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/main",
+        "iconPath": "static/tabs/my.png",
+        "selectedIconPath": "static/tabs/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "i-button": "../static/iView/button/index"
+  }
+}
