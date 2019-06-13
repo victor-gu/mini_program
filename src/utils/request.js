@@ -17,6 +17,13 @@ request.interceptors.request.use((request) => {
 request.interceptors.response.use(
   (response, promise) => {
     wx.hideLoading();
+    if (err.message === 'request:fail timeout') {
+      wx.showModal({
+        title: '提示',
+        content: '网络超时,请稍后重试！',
+        showCancel: false
+      })
+    }
     return promise.resolve(response.data);
   },
   (err, promise) => {

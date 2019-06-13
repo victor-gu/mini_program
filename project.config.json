@@ -23,6 +23,7 @@
 	"projectname": "mini_program",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"libVersion": "2.7.1",
 	"condition": {
 		"search": {
 			"current": -1,

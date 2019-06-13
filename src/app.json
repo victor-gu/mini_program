@@ -37,7 +37,22 @@
       }
     ]
   },
+  "plugins": {
+    "weather": {
+      "version": "1.1.0",
+      "provider": "wx6578a11b90205be3"
+    }
+  },
   "usingComponents": {
-    "i-button": "../static/iView/button/index"
+    "i-button": "../static/iView/button/index",
+    "weather": "plugin://weather/weather"
+  },
+  "networkTimeout": {
+    "request": 15000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "根据用户当前位置获取实时天气信息"
+    }
   }
 }
